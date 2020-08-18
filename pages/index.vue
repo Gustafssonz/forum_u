@@ -1,16 +1,23 @@
 <template>
 
-  <Welcome v-if="firstTimer" />
+  <PopupCard 
+  v-if="cardData !== null" 
+  v-bind:cardData="cardData" 
+  />
 
 </template>
 
 <script>
-import Welcome from '../components/Welcome';
 
 export default {
-  data () {
+  data: function () {
     return {
-      firstTimer: true,
+      cardData: {
+        title: "First time visiting Forum?",
+        text: "Here you get an overview of all the things going on, click here to get a guided tour!",
+        buttonText: "Another time",
+        special: true
+      },
     }
   },
 }

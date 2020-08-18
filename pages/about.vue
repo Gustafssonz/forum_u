@@ -4,9 +4,7 @@
 
 <script>
   export default {
-    data () {
-        return { name: 'small World!' }
-    },
+
     asyncData (context) {
       // called every time before loading the component
       // as the name said, it can be async
@@ -21,6 +19,7 @@
     },
     // and more functionality to discover
   }
+ 
 </script>
 
 <style>

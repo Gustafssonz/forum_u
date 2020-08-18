@@ -5,8 +5,9 @@
       <ul>
           <li><nuxt-link to="/">Home</nuxt-link></li>
           <li><nuxt-link to="about">About</nuxt-link></li>
-            <v-btn elevation="2"> Login </v-btn>
+          <li><nuxt-link to="topics">Topics</nuxt-link></li>
       </ul>
+      <v-btn elevation="2"> Login </v-btn>
     </nav>
   </header>
 </template>
