@@ -1,6 +1,9 @@
 <template>
     <v-col v-if="show" cols="6">
-        <v-card class="mx-auto" color="success" hover="cardData.special">
+        <v-card 
+        class="mx-auto" 
+        color="success" 
+        >
             <v-card-title class="headline">{{ cardData.title }}</v-card-title>
             <v-card-subtitle>{{ cardData.text }}</v-card-subtitle>
             <v-card-actions>
@@ -17,7 +20,7 @@
         props: ['cardData'],
         methods: {
              removeMessage(seconds) {
-                setTimeout(()=> this.show = false, seconds * 1000);
+                this.show = false;
             },
         }
   }
